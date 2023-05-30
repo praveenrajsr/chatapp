@@ -1,0 +1,84 @@
+// breakpoints
+@mixin small() {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.form-container {
+    max-width: 550px;
+    width: 950px;
+    padding: 1rem;
+    position: relative;
+
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+    border-radius: 5px;
+
+    @include small() {
+        width: 100%;
+    }
+
+    .login-form {
+        background-color: #fff;
+        padding: 25px 30px 50px 30px;
+    }
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #C04848 0%, #480048 51%, #C04848 100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.chat_box {
+    width: 100%;
+    background-color: #c9c9c9;
+    height: 250px;
+    padding: 5px 20px;
+    overflow-y: scroll;
+
+    .each_message {
+        background-color: white;
+        padding: 5px 5px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+}
+
+#sidebarMenu {
+    height: 100vh;
+}

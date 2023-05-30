@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'chatapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Lets chat!</h1>
+
+<div class="chat_box">
+    <div id="messages"></div>
+</div>
+
+<form id="form" class="mt-2">
+    <input type="text" name="message" class="form-control" placeholder="Press enter to send message" />
+</form>
+
+{% comment %} chatBox {% endcomment %}
+{% endblock %}
